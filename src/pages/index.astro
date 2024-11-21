@@ -1,0 +1,170 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+
+const features = [
+  {
+    title: "Black Friday Exclusive",
+    value: "6 Months FREE",
+    description: "ExpressVPN Black Friday deal: Get up to 6 extra months free with your subscription"
+  },
+  {
+    title: "Global Coverage",
+    value: "105 Countries",
+    description: "Access ExpressVPN's ultra-fast servers worldwide this Black Friday"
+  },
+  {
+    title: "Multi-Device",
+    value: "8 Devices",
+    description: "Protect all your devices with one ExpressVPN Black Friday subscription"
+  }
+];
+
+const vpnFeatures = [
+  {
+    title: "Worldwide Access",
+    features: [
+      "Ultra-fast servers in 105 countries",
+      "Unlimited bandwidth and server switches",
+      "Access global Black Friday deals",
+      "Stream content from anywhere"
+    ]
+  },
+  {
+    title: "Security Features",
+    features: [
+      "Best-in-class AES 256-bit encryption",
+      "Premium password manager included",
+      "Ad and tracker blockers",
+      "24/7 live chat support"
+    ]
+  }
+];
+---
+
+<Layout 
+  title="ExpressVPN Black Friday Deal 2024 - 6 Months FREE + Cyber Monday Special [Official]" 
+  description="🔥 Exclusive ExpressVPN Black Friday & Cyber Monday Deal 2024: Get 6 months FREE + special discount. Best VPN deal with servers in 105 countries. Limited time offer!">
+  
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <!-- Hero Section -->
+    <section class="text-center mb-16">
+      <div class="mb-4 text-green-600 font-semibold flex items-center justify-center gap-2">
+        <span class="inline-block w-2 h-2 bg-green-600 rounded-full"></span>
+        Official Black Friday & Cyber Monday Deal • Limited Time
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        ExpressVPN Black Friday Deal 2024
+        <span class="block text-gray-600 text-2xl mt-2">Get 6 Months FREE + Special Cyber Monday Discount</span>
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Last updated Nov. 2024 • Black Friday Special Offer
+      </p>
+      <a href="https://go.expressvpn.com/c/3485346/2200756/16063?sharedid=landing" 
+         class="inline-block bg-red-600 text-white text-xl font-bold py-4 px-8 rounded-lg hover:bg-red-700 transition-colors">
+        Claim Your Black Friday VPN Deal
+      </a>
+      <p class="text-sm text-gray-500 mt-2">30-day money-back guarantee • Limited time offer</p>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="grid md:grid-cols-3 gap-8 mb-16">
+      {features.map(feature => <FeatureCard {...feature} />)}
+    </section>
+
+    <!-- How to Get Started -->
+    <section class="bg-white rounded-lg p-8 mb-16 shadow-sm">
+      <h2 class="text-2xl font-bold mb-6">Get ExpressVPN Black Friday Deal in 3 Steps</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-red-600 mb-4">1</div>
+          <h3 class="font-bold mb-2">Sign Up</h3>
+          <p class="text-gray-600">Claim the ExpressVPN Black Friday offer with 6 months FREE</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-red-600 mb-4">2</div>
+          <h3 class="font-bold mb-2">Download</h3>
+          <p class="text-gray-600">Install ExpressVPN on up to 8 devices</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-red-600 mb-4">3</div>
+          <h3 class="font-bold mb-2">Connect</h3>
+          <p class="text-gray-600">Access servers in 105 countries instantly</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VPN Features -->
+    <section class="space-y-8 mb-16">
+      {vpnFeatures.map(section => (
+        <div class="bg-white rounded-lg p-8 shadow-sm">
+          <h3 class="text-2xl font-bold mb-4">{section.title}</h3>
+          <ul class="space-y-3">
+            {section.features.map(feature => (
+              <li class="flex items-start gap-3">
+                <span class="text-red-600">✓</span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-white rounded-lg p-8 mb-16 shadow-sm">
+      <h2 class="text-2xl font-bold mb-6">ExpressVPN Black Friday Deal FAQ</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-bold mb-2">What's included in the ExpressVPN Black Friday deal?</h3>
+          <p class="text-gray-600">This Black Friday & Cyber Monday offer includes up to 6 months FREE, plus access to all premium features including servers in 105 countries, 8 device connections, and ExpressVPN Keys password manager.</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Is there a money-back guarantee?</h3>
+          <p class="text-gray-600">Yes, ExpressVPN offers a 30-day money-back guarantee with this Black Friday deal, so you can try it risk-free.</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">What devices can I use with ExpressVPN?</h3>
+          <p class="text-gray-600">ExpressVPN works on Windows, Mac, iOS, Android, Linux, and routers. This Black Friday offer lets you protect up to 8 devices simultaneously.</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Is this the best ExpressVPN deal?</h3>
+          <p class="text-gray-600">Yes, this is ExpressVPN's biggest Black Friday & Cyber Monday offer ever, with up to 6 months FREE plus additional features at no extra cost.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extra Features -->
+    <section class="bg-white rounded-lg p-8 mb-16 shadow-sm">
+      <h2 class="text-2xl font-bold mb-6">Black Friday Bonus Features Included</h2>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="text-red-600">✓</span>
+          <span><strong>ExpressVPN Keys:</strong> Premium password manager included free</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-red-600">✓</span>
+          <span><strong>Threat Manager:</strong> Built-in ad and tracker blocker</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-red-600">✓</span>
+          <span><strong>24/7 Support:</strong> Live chat assistance whenever you need it</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-red-600">✓</span>
+          <span><strong>Unlimited Bandwidth:</strong> Stream and browse without restrictions</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CTA Bottom -->
+    <section class="text-center">
+      <h2 class="text-2xl font-bold mb-4">Don't Miss This ExpressVPN Black Friday Deal!</h2>
+      <a href="https://go.expressvpn.com/c/3485346/2200756/16063?sharedid=landing" 
+         class="inline-block bg-red-600 text-white text-xl font-bold py-4 px-8 rounded-lg hover:bg-red-700 transition-colors">
+        Get 6 Months FREE Now!
+      </a>
+      <p class="text-sm text-gray-500 mt-2">Black Friday Special: 30-day money-back guarantee</p>
+    </section>
+  </main>
+</Layout>
